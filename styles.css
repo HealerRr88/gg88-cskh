@@ -15,7 +15,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     padding: 1.25rem;
-    background: url(./assets/img/background.png);
+    background: url(./assets/img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
