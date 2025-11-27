@@ -69,11 +69,15 @@ a {
     display: none;
 }
 
-.support-box {
+.support-menu, .support-menu-camnang {
     display: block;
 }
 
 .support-box-mb {
+    display: none;
+}
+
+.support-popup {
     display: none;
 }
 
@@ -687,6 +691,68 @@ only screen and (min-device-width: 20rem) and (max-device-width: 48rem) {
     }
 
     /* List item đẹp hơn */
+    .support-card {
+        position: relative;
+    }
+
+    /* Khi card có class is-open -> hiện popup */
+    .support-card.is-open .support-popup {
+        display: flex;
+    }
+
+    .support-popup {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .support-popup-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .35);
+    }
+
+    .support-popup-inner {
+        position: relative;
+        z-index: 1;
+        width: 88%;
+        max-width: 380px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+        text-align: center;
+    }
+
+    .support-popup-inner ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 26px 10px;
+    }
+
+    .support-popup-inner li+li {
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .support-popup-inner a {
+        display: block;
+        padding: 12px 0;
+        text-decoration: none;
+        color: #008f70;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .support-popup-close {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        border: none;
+        background: transparent;
+        font-size: 20px;
+        color: #008f70;
+        font-weight: bold;
+    }
+
     .support-menu-page ul {
         list-style: none;
         margin: 0;
@@ -743,7 +809,7 @@ only screen and (min-device-width: 20rem) and (max-device-width: 48rem) {
         display: none;
     }
 
-    .support-box {
+    .support-menu, .support-menu-camnang {
         display: none;
     }
 
