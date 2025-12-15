@@ -18,13 +18,13 @@ export default function AppDownloadComponent() {
   return (
     <>
       <div className="d-flex justify-content-between align-items-center gap-4 mt-md-3">
-        <Link className='flex-fill arise-animation'>
+        <Link target='__blank' to={links.find(x => x.key === LINK_KEYS.CHE_DO_VIP_BUTTON.key)?.url} className='flex-fill arise-animation'>
           <img className='w-100' src={che_do_vip_btn} alt="che_do_vip_btn" />
         </Link>
         <div className='col-3 cursor-pointer arise-animation' onClick={() => setIsShowDownloadModal(true)}>
           <img className='w-100' src={tai_app_btn} alt="tai_app_btn" />
         </div>
-        <Link to={'#'} className='flex-fill arise-animation'>
+        <Link target='__blank' to={links.find(x => x.key === LINK_KEYS.KHUYEN_MAI_BUTTON.key)?.url} className='flex-fill arise-animation'>
           <img className='w-100' src={khuyen_mai_btn} alt="khuyen_mai_btn" />
         </Link>
       </div>

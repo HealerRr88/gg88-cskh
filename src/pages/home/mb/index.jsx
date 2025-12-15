@@ -25,6 +25,7 @@ export default function MBPage() {
         isShowChatBox && (
           <div className="position-fixed top-0 start-0 w-100 h-100 z-3 bg-white">
             <ChatBoxComponent
+              isShowChatBox={isShowChatBox}
               setIsShowChatBox={setIsShowChatBox}
             />
           </div>

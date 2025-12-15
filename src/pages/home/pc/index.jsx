@@ -1,5 +1,5 @@
 import HeaderComponent from "../../../components/header";
-import left_woman from "../../../assets/images/left-woman.png";
+import left_woman from "../../../assets/images/left-woman.webp";
 import ContactComponent from "../../../components/contact";
 import MainBoxComponent from "../../../components/main_box";
 import ItemBarComponent from "../../../components/item_bar";
@@ -7,7 +7,7 @@ import { useState } from "react";
 import ChatBoxComponent from "../../../components/chat_box";
 
 export default function PCPage() {
-  const [isShowChatBox, setIsShowChatBox] = useState(false);
+  const [isShowChatBox, setIsShowChatBox] = useState(null);
 
   return (
     <div className="pb-5">
@@ -17,6 +17,7 @@ export default function PCPage() {
           isShowChatBox ? (
             <div className="col-5 pe-4 flex-grow-1">
               <ChatBoxComponent
+                isShowChatBox={isShowChatBox}
                 setIsShowChatBox={setIsShowChatBox}
               />
             </div>

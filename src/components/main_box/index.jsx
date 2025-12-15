@@ -87,10 +87,10 @@ export default function MainBoxComponent({
               {
                 activeTab === 0 && (
                   <div className='d-flex flex-column gap-2'>
-                    <Link to={`${links.find(x => x.key === LINK_KEYS.KHUYEN_MAI_VA_SAN_PHAM.key)?.url}`} className="arise-animation" onClick={() => { setIsShowChatBox(true) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.KHUYEN_MAI_VA_SAN_PHAM.key)?.url) }}>
                       <img className='w-100' src={khuyen_mai_va_san_pham} alt="khuyen_mai_va_san_pham" />
                     </Link>
-                    <Link to={`${links.find(x => x.key === LINK_KEYS.HO_TRO_NAP_TIEN.key)?.url}`} className="arise-animation" onClick={() => { setIsShowChatBox(true) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.HO_TRO_NAP_TIEN.key)?.url) }}>
                       <img className='w-100' src={ho_tro_nap_tien} alt="ho_tro_nap_tien" />
                     </Link>
                     <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.TRUNG_TAM_KHUYEN_MAI.key)?.url}`} className="arise-animation">
@@ -140,10 +140,10 @@ export default function MainBoxComponent({
               {
                 activeTab === 0 && (
                   <div className='d-flex flex-column gap-2'>
-                    <Link to={links.find(x => x.key === LINK_KEYS.SUA_DOI_THONG_TIN.key)?.url} className="arise-animation" onClick={() => { setIsShowChatBox(true) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.SUA_DOI_THONG_TIN.key)?.url) }}>
                       <img className='w-100' src={sua_doi_thong_tin} alt="sua_doi_thong_tin" />
                     </Link>
-                    <Link to={links.find(x => x.key === LINK_KEYS.HO_TRO_RUT_TIEN.key)?.url} className="arise-animation" onClick={() => { setIsShowChatBox(true) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.HO_TRO_RUT_TIEN.key)?.url) }}>
                       <img className='w-100' src={ho_tro_rut_tien} alt="ho_tro_rut_tien" />
                     </Link>
                     <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.CAM_NANG_HUONG_DAN.key)?.url} className="arise-animation">

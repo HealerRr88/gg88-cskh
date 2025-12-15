@@ -125,10 +125,6 @@ export const LINK_KEYS = {
     key: 'trang-chu',
     text: 'Link trang chủ',
   },
-  CHAT_IFRAME: {
-    key: 'chat-iframe',
-    text: 'Chat iframe',
-  },
   TAI_APP_IOS: {
     key: 'tai-app-ios',
     text: 'Tải app iOS',
