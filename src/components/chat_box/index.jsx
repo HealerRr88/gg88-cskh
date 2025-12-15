@@ -12,7 +12,7 @@ export default function ChatBoxComponent({
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 3000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [isShowChatBox]);
 
   return (
     <div className="w-100 h-100 d-flex flex-column">
