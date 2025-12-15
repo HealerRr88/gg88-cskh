@@ -1,0 +1,12 @@
+.contactInfo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0D4A43;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contactInfo {
+    font-size: 10px;
+  }
+}

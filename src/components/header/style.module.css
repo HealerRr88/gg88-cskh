@@ -1,0 +1,35 @@
+.header {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  max-width: 261px;
+}
+
+.vipIcon {
+  width: 60px;
+  height: 60px;
+  margin-left: 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #0D4A43 -5.77%, #0D4A43 76.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media screen and (max-width: 768px) {
+  .vipIcon {
+    width: 26px;
+    height: 26px;
+    margin-left: 6px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
