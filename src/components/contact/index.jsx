@@ -1,7 +1,7 @@
-import phone_icon from '../../assets/images/phone-icon.png';
-import telegram_icon from '../../assets/images/telegram-icon.png';
-import email_icon from '../../assets/images/email-icon.png';
-import facebook_icon from '../../assets/images/facebook-icon.png';
+import phone_icon from '../../assets/images/phone-icon.webp';
+import telegram_icon from '../../assets/images/telegram-icon.webp';
+import email_icon from '../../assets/images/email-icon.webp';
+import facebook_icon from '../../assets/images/facebook-icon.webp';
 import styles from './style.module.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';

@@ -1,8 +1,8 @@
 import styles from './style.module.css';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
-import vip_icon from '../../assets/images/vip-icon.png';
+import vip_icon from '../../assets/images/vip-icon.webp';
 import { LINK_KEYS } from '../../utils/configs';
 import { useSelector } from 'react-redux';
 

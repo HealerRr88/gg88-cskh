@@ -1,6 +1,6 @@
-import che_do_vip_btn from '../../assets/images/che-do-vip-btn.png'
-import tai_app_btn from '../../assets/images/tai-app-btn.png'
-import khuyen_mai_btn from '../../assets/images/khuyen-mai-btn.png'
+import che_do_vip_btn from '../../assets/images/che-do-vip-btn.webp'
+import tai_app_btn from '../../assets/images/tai-app-btn.webp'
+import khuyen_mai_btn from '../../assets/images/khuyen-mai-btn.webp'
 import { Link } from 'react-router-dom'
 import { Modal } from 'react-bootstrap'
 import { useState } from 'react';

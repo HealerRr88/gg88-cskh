@@ -1,34 +1,34 @@
 import styles from './style.module.css';
-import cskh_247_tab from '../../assets/images/cskh-247-tab.png';
-import cskh_247_tab_active from '../../assets/images/cskh-247-tab-active.png';
-import thong_tin_tab from '../../assets/images/thong-tin-tab.png';
-import thong_tin_tab_active from '../../assets/images/thong-tin-tab-active.png';
-import tin_tuc_tab from '../../assets/images/tin-tuc-tab.png';
-import tin_tuc_tab_active from '../../assets/images/tin-tuc-tab-active.png';
+import cskh_247_tab from '../../assets/images/cskh-247-tab.webp';
+import cskh_247_tab_active from '../../assets/images/cskh-247-tab-active.webp';
+import thong_tin_tab from '../../assets/images/thong-tin-tab.webp';
+import thong_tin_tab_active from '../../assets/images/thong-tin-tab-active.webp';
+import tin_tuc_tab from '../../assets/images/tin-tuc-tab.webp';
+import tin_tuc_tab_active from '../../assets/images/tin-tuc-tab-active.webp';
 
 //active tab === 0
-import khuyen_mai_va_san_pham from '../../assets/images/khuyen-mai-va-san-pham.png';
-import ho_tro_nap_tien from '../../assets/images/ho-tro-nap-tien.png';
-import trung_tam_khuyen_mai from '../../assets/images/trung-tam-khuyen-mai.png';
-import sua_doi_thong_tin from '../../assets/images/sua-doi-thong-tin.png';
-import ho_tro_rut_tien from '../../assets/images/ho-tro-rut-tien.png';
-import cam_nang_huong_dan from '../../assets/images/cam-nang-huong-dan.png';
+import khuyen_mai_va_san_pham from '../../assets/images/khuyen-mai-va-san-pham.webp';
+import ho_tro_nap_tien from '../../assets/images/ho-tro-nap-tien.webp';
+import trung_tam_khuyen_mai from '../../assets/images/trung-tam-khuyen-mai.webp';
+import sua_doi_thong_tin from '../../assets/images/sua-doi-thong-tin.webp';
+import ho_tro_rut_tien from '../../assets/images/ho-tro-rut-tien.webp';
+import cam_nang_huong_dan from '../../assets/images/cam-nang-huong-dan.webp';
 
 //active tab === 1
-import hop_tac_dai_ly from '../../assets/images/hop-tac-dai-ly.png';
-import hotline from '../../assets/images/hotline.png';
-import thay_doi_thong_tin from '../../assets/images/thay-doi-thong-tin.png';
-import gop_y_nhan_thuong from '../../assets/images/gop-y-nhan-thuong.png';
-import qua_tang_tri_an from '../../assets/images/qua-tang-tri-an.png';
-import telegram_khieu_nai from '../../assets/images/telegram-khieu-nai.png';
+import hop_tac_dai_ly from '../../assets/images/hop-tac-dai-ly.webp';
+import hotline from '../../assets/images/hotline.webp';
+import thay_doi_thong_tin from '../../assets/images/thay-doi-thong-tin.webp';
+import gop_y_nhan_thuong from '../../assets/images/gop-y-nhan-thuong.webp';
+import qua_tang_tri_an from '../../assets/images/qua-tang-tri-an.webp';
+import telegram_khieu_nai from '../../assets/images/telegram-khieu-nai.webp';
 
 //active tab === 2
-import nen_tang_livestream from '../../assets/images/nen-tang-livestream.png';
-import fanpage from '../../assets/images/fanpage.png';
-import kenh_tiktok from '../../assets/images/kenh-tiktok.png';
-import nen_tang_cong_dong from '../../assets/images/nen-tang-cong-dong.png';
-import kenh_telegram from '../../assets/images/kenh-telegram.png';
-import link_toc_do_cao from '../../assets/images/link-toc-do-cao.png';
+import nen_tang_livestream from '../../assets/images/nen-tang-livestream.webp';
+import fanpage from '../../assets/images/fanpage.webp';
+import kenh_tiktok from '../../assets/images/kenh-tiktok.webp';
+import nen_tang_cong_dong from '../../assets/images/nen-tang-cong-dong.webp';
+import kenh_telegram from '../../assets/images/kenh-telegram.webp';
+import link_toc_do_cao from '../../assets/images/link-toc-do-cao.webp';
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';

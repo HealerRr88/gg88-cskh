@@ -1,8 +1,8 @@
-import livestream_icon from '../../assets/images/livestream-icon.png';
-import lien_minh_kjc_icon from '../../assets/images/lien-minh-kjc-icon.png';
-import qua_tang_tri_an_big_icon from '../../assets/images/qua-tang-tri-an-big-icon.png';
-import thu_thap_chu_cai_icon from '../../assets/images/thu-thap-chu-cai-icon.png';
-import vong_quay_may_man_icon from '../../assets/images/vong-quay-may-man-icon.png';
+import livestream_icon from '../../assets/images/livestream-icon.webp';
+import lien_minh_kjc_icon from '../../assets/images/lien-minh-kjc-icon.webp';
+import qua_tang_tri_an_big_icon from '../../assets/images/qua-tang-tri-an-big-icon.webp';
+import thu_thap_chu_cai_icon from '../../assets/images/thu-thap-chu-cai-icon.webp';
+import vong_quay_may_man_icon from '../../assets/images/vong-quay-may-man-icon.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import styles from './style.module.css';
