@@ -10,8 +10,15 @@ export default function ChatBoxComponent({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3000);
-    return () => clearTimeout(timer);
+    if (isShowChatBox) {
+      setIsLoading(true);
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    } else {
+      setIsLoading(true);
+    }
   }, [isShowChatBox]);
 
   return (
