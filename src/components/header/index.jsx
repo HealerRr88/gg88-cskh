@@ -4,24 +4,22 @@ import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import vip_icon from '../../assets/images/vip-icon.webp';
 import { LINK_KEYS } from '../../utils/configs';
-import { useSelector } from 'react-redux';
+import { getLinkByKey } from '../../utils/functions';
 
-export default function HeaderComponent() {
-
-  const links = useSelector(state => state.links);
+export default function HeaderComponent({ links }) {
 
   return (
     <>
       <div className={`py-md-3 py-2 px-md-5 px-2 d-flex justify-content-between align-items-center mt-md-3 ${styles.header} ${(!isMobile ? 'container rounded-pill' : '')}`}>
         <div className={`col-md-3 col-4 ${styles.logo}`}>
-          <Link to={links.find(x => x.key === LINK_KEYS.TRANG_CHU.key)?.url}>
+          <Link to={getLinkByKey(links, LINK_KEYS.TRANG_CHU, isMobile)}>
             <img className='w-100' src={logo} alt="logo" />
           </Link>
         </div>
         <div className='d-flex align-items-center'>
           {
             isMobile ? (
-              <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.DANG_NHAP.key)?.url}`} className='arise-animation'>
+              <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.DANG_NHAP, isMobile)} className='arise-animation'>
                 <svg width="70" height="21" viewBox="0 0 86 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_99_550" fill="white">
                     <path d="M0 13C0 5.8203 5.8203 0 13 0H73C80.1797 0 86 5.8203 86 13C86 20.1797 80.1797 26 73 26H13C5.8203 26 0 20.1797 0 13Z" />
@@ -51,7 +49,7 @@ export default function HeaderComponent() {
                 </svg>
               </Link>
             ) : (
-              <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.DANG_NHAP.key)?.url}`} className='arise-animation'>
+              <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.DANG_NHAP, isMobile)} className='arise-animation'>
                 <svg width="166" height="50" viewBox="0 0 166 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_131_1444" fill="white">
                     <path d="M0 25C0 11.1929 11.1929 0 25 0H140.385C154.192 0 165.385 11.1929 165.385 25C165.385 38.8071 154.192 50 140.385 50H25C11.1929 50 0 38.8071 0 25Z" />
@@ -84,7 +82,7 @@ export default function HeaderComponent() {
           }
           {
             isMobile ? (
-              <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.DANG_KY.key)?.url}`} className='ms-1 arise-animation'>
+              <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.DANG_KY, isMobile)} className='ms-1 arise-animation'>
                 <svg width="70" height="21" viewBox="0 0 86 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_99_552" fill="white">
                     <path d="M0 13C0 5.8203 5.8203 0 13 0H73C80.1797 0 86 5.8203 86 13C86 20.1797 80.1797 26 73 26H13C5.8203 26 0 20.1797 0 13Z" />
@@ -111,7 +109,7 @@ export default function HeaderComponent() {
 
               </Link>
             ) : (
-              <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.DANG_KY.key)?.url}`} className='ms-3 arise-animation'>
+              <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.DANG_KY, isMobile)} className='ms-3 arise-animation'>
                 <svg width="166" height="50" viewBox="0 0 166 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_131_1446" fill="white">
                     <path d="M0 25C0 11.1929 11.1929 0 25 0H140.385C154.192 0 165.385 11.1929 165.385 25C165.385 38.8071 154.192 50 140.385 50H25C11.1929 50 0 38.8071 0 25Z" />

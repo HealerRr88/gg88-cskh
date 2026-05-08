@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,12 +19,10 @@ const queryClient = new QueryClient(
 );
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </QueryClientProvider>
-    </Provider>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </QueryClientProvider>
   </React.StrictMode>
 );

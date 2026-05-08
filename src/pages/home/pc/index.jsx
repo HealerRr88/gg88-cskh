@@ -6,12 +6,14 @@ import ItemBarComponent from "../../../components/item_bar";
 import { useState } from "react";
 import ChatBoxComponent from "../../../components/chat_box";
 
-export default function PCPage() {
+export default function PCPage({ links, gifs }) {
   const [isShowChatBox, setIsShowChatBox] = useState(null);
 
   return (
     <div className="pb-5">
-      <HeaderComponent />
+      <HeaderComponent
+        links={links}
+      />
       <div className={`container d-flex mt-4 ${(isShowChatBox ? '' : 'align-items-center')}`}>
         {
           isShowChatBox ? (
@@ -28,15 +30,20 @@ export default function PCPage() {
           )
         }
         <div className={`col-md-7 col-12`}>
-          <ContactComponent />
+          <ContactComponent
+            links={links}
+          />
           <MainBoxComponent
+            links={links}
             isShowChatBox={isShowChatBox}
             setIsShowChatBox={setIsShowChatBox}
           />
         </div>
       </div>
       <div className="container">
-        <ItemBarComponent />
+        <ItemBarComponent
+          links={links}
+        />
       </div>
     </div>
   );

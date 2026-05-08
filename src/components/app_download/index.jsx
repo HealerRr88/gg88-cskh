@@ -6,25 +6,25 @@ import { Modal } from 'react-bootstrap'
 import { useState } from 'react';
 import './styles.css';
 import styles from './style.module.css';
-import { useSelector } from 'react-redux'
 import { LINK_KEYS } from '../../utils/configs'
+import { isMobile } from 'react-device-detect';
+import { getLinkByKey } from '../../utils/functions';
 
-export default function AppDownloadComponent() {
+export default function AppDownloadComponent({ links }) {
   const [isShowDownloadModal, setIsShowDownloadModal] = useState(false);
   const [appDownloadPlatform, setAppDownloadPlatform] = useState('iOS');
 
-  const links = useSelector(state => state.links);
 
   return (
     <>
       <div className="d-flex justify-content-between align-items-center gap-4 mt-md-3">
-        <Link target='__blank' to={links.find(x => x.key === LINK_KEYS.CHE_DO_VIP_BUTTON.key)?.url} className='flex-fill arise-animation'>
+        <Link target='__blank' to={getLinkByKey(links, LINK_KEYS.CHE_DO_VIP_BUTTON, isMobile)} className='flex-fill arise-animation'>
           <img className='w-100' src={che_do_vip_btn} alt="che_do_vip_btn" />
         </Link>
         <div className='col-3 cursor-pointer arise-animation' onClick={() => setIsShowDownloadModal(true)}>
           <img className='w-100' src={tai_app_btn} alt="tai_app_btn" />
         </div>
-        <Link target='__blank' to={links.find(x => x.key === LINK_KEYS.KHUYEN_MAI_BUTTON.key)?.url} className='flex-fill arise-animation'>
+        <Link target='__blank' to={getLinkByKey(links, LINK_KEYS.KHUYEN_MAI_BUTTON, isMobile)} className='flex-fill arise-animation'>
           <img className='w-100' src={khuyen_mai_btn} alt="khuyen_mai_btn" />
         </Link>
       </div>
@@ -50,7 +50,7 @@ export default function AppDownloadComponent() {
                 Android
               </div>
             </div>
-            <Link target='__blank' to={appDownloadPlatform === 'iOS' ? links.find(x => x.key === LINK_KEYS.TAI_APP_IOS.key)?.url : links.find(x => x.key === LINK_KEYS.TAI_APP_ANDROID.key)?.url} className={`mt-5 rounded-pill cursor-pointer arise-animation d-flex align-items-center justify-content-center ${styles.downloadBtn}`}>
+            <Link target='__blank' to={appDownloadPlatform === 'iOS' ? getLinkByKey(links, LINK_KEYS.TAI_APP_IOS, isMobile) : getLinkByKey(links, LINK_KEYS.TAI_APP_ANDROID, isMobile)} className={`mt-5 rounded-pill cursor-pointer arise-animation d-flex align-items-center justify-content-center ${styles.downloadBtn}`}>
               <span className='text-uppercase'>TẢI APP {appDownloadPlatform}</span>
             </Link>
           </div>

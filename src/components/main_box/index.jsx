@@ -59,13 +59,13 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import AppDownloadComponent from '../app_download';
 import { isMobile } from 'react-device-detect';
 import { LINK_KEYS } from '../../utils/configs';
-import { useSelector } from 'react-redux';
+import { getLinkByKey } from '../../utils/functions';
 
 export default function MainBoxComponent({
+  links,
   isShowChatBox,
   setIsShowChatBox
 }) {
-  const links = useSelector(state => state.links);
   const [activeTab, setActiveTab] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -108,13 +108,13 @@ export default function MainBoxComponent({
               {
                 activeTab === 0 && (
                   <div className='d-flex flex-column gap-2'>
-                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.KHUYEN_MAI_VA_SAN_PHAM.key)?.url) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(getLinkByKey(links, LINK_KEYS.KHUYEN_MAI_VA_SAN_PHAM, isMobile)) }}>
                       <img className='w-100' src={isMobile ? khuyen_mai_va_san_pham_mobile : khuyen_mai_va_san_pham} alt="khuyen_mai_va_san_pham" />
                     </Link>
-                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.HO_TRO_NAP_TIEN.key)?.url) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(getLinkByKey(links, LINK_KEYS.HO_TRO_NAP_TIEN, isMobile)) }}>
                       <img className='w-100' src={isMobile ? ho_tro_nap_tien_mobile : ho_tro_nap_tien} alt="ho_tro_nap_tien" />
                     </Link>
-                    <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.TRUNG_TAM_KHUYEN_MAI.key)?.url}`} className="arise-animation">
+                    <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.TRUNG_TAM_KHUYEN_MAI, isMobile)} className="arise-animation">
                       <img className='w-100' src={isMobile ? trung_tam_khuyen_mai_mobile : trung_tam_khuyen_mai} alt="trung_tam_khuyen_mai" />
                     </Link>
                   </div>
@@ -122,26 +122,26 @@ export default function MainBoxComponent({
               }
               {activeTab === 1 && (
                 <div className='d-flex flex-column gap-2'>
-                  <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.HOP_TAC_DAI_LY.key)?.url}`} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.HOP_TAC_DAI_LY, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? hop_tac_dai_ly_mobile : hop_tac_dai_ly} alt="hop_tac_dai_ly" />
                   </Link>
-                  <Link target='__bank' to={`${links.find(x => x.key === LINK_KEYS.HOTLINE.key)?.url}`} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.HOTLINE, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? hotline_mobile : hotline} alt="hotline" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.THAY_DOI_THONG_TIN.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.THAY_DOI_THONG_TIN, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? thay_doi_thong_tin_mobile : thay_doi_thong_tin} alt="thay_doi_thong_tin" />
                   </Link>
                 </div>
               )}
               {activeTab === 2 && (
                 <div className='d-flex flex-column gap-2'>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.NEN_TANG_LIVESTREAM.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.NEN_TANG_LIVESTREAM, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? nen_tang_livestream_mobile : nen_tang_livestream} alt="nen_tang_livestream" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.FANPAGE.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.FANPAGE, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? fanpage_mobile : fanpage} alt="fanpage" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.KENH_TIKTOK.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.KENH_TIKTOK, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? kenh_tiktok_mobile : kenh_tiktok} alt="kenh_tiktok" />
                   </Link>
                 </div>
@@ -161,13 +161,13 @@ export default function MainBoxComponent({
               {
                 activeTab === 0 && (
                   <div className='d-flex flex-column gap-2'>
-                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.SUA_DOI_THONG_TIN.key)?.url) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(getLinkByKey(links, LINK_KEYS.SUA_DOI_THONG_TIN, isMobile)) }}>
                       <img className='w-100' src={isMobile ? sua_doi_thong_tin_mobile : sua_doi_thong_tin} alt="sua_doi_thong_tin" />
                     </Link>
-                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(links.find(x => x.key === LINK_KEYS.HO_TRO_RUT_TIEN.key)?.url) }}>
+                    <Link className="arise-animation" onClick={() => { setIsShowChatBox(getLinkByKey(links, LINK_KEYS.HO_TRO_RUT_TIEN, isMobile)) }}>
                       <img className='w-100' src={isMobile ? ho_tro_rut_tien_mobile : ho_tro_rut_tien} alt="ho_tro_rut_tien" />
                     </Link>
-                    <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.CAM_NANG_HUONG_DAN.key)?.url} className="arise-animation">
+                    <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.CAM_NANG_HUONG_DAN, isMobile)} className="arise-animation">
                       <img className='w-100' src={isMobile ? cam_nang_huong_dan_mobile : cam_nang_huong_dan} alt="cam_nang_huong_dan" />
                     </Link>
                   </div>
@@ -175,26 +175,26 @@ export default function MainBoxComponent({
               }
               {activeTab === 1 && (
                 <div className='d-flex flex-column gap-2'>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.GOP_Y_NHAN_THUONG.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.GOP_Y_NHAN_THUONG, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? gop_y_nhan_thuong_mobile : gop_y_nhan_thuong} alt="gop_y_nhan_thuong" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.QUA_TANG_TRI_AN_ABOVE.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.QUA_TANG_TRI_AN_ABOVE, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? qua_tang_tri_an_mobile : qua_tang_tri_an} alt="qua_tang_tri_an" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.TELEGRAM_KHIEU_NAI.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.TELEGRAM_KHIEU_NAI, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? telegram_khieu_nai_mobile : telegram_khieu_nai} alt="telegram_khieu_nai" />
                   </Link>
                 </div>
               )}
               {activeTab === 2 && (
                 <div className='d-flex flex-column gap-2'>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.NEN_TANG_CONG_DONG.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.NEN_TANG_CONG_DONG, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? nen_tang_cong_dong_mobile : nen_tang_cong_dong} alt="nen_tang_cong_dong" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.KENH_TELEGRAM.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.KENH_TELEGRAM, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? kenh_telegram_mobile : kenh_telegram} alt="kenh_telegram" />
                   </Link>
-                  <Link target='__bank' to={links.find(x => x.key === LINK_KEYS.LINK_TOC_DO_CAO.key)?.url} className="arise-animation">
+                  <Link target='__bank' to={getLinkByKey(links, LINK_KEYS.LINK_TOC_DO_CAO, isMobile)} className="arise-animation">
                     <img className='w-100' src={isMobile ? link_toc_do_cao_mobile : link_toc_do_cao} alt="link_toc_do_cao" />
                   </Link>
                 </div>

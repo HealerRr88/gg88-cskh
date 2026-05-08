@@ -6,20 +6,29 @@ import ContactComponent from "../../../components/contact";
 import AppDownloadComponent from "../../../components/app_download";
 import ChatBoxComponent from "../../../components/chat_box";
 
-export default function MBPage() {
+export default function MBPage({ links, gifs }) {
   const [isShowChatBox, setIsShowChatBox] = useState(false);
 
   return (
     <div className="vh-100 d-flex flex-column overflow-auto">
-      <HeaderComponent />
+      <HeaderComponent
+        links={links}
+      />
       <MainBoxComponent
+        links={links}
         isShowChatBox={isShowChatBox}
         setIsShowChatBox={setIsShowChatBox}
       />
-      <ItemBarComponent />
-      <ContactComponent />
+      <ItemBarComponent
+        links={links}
+      />
+      <ContactComponent
+        links={links}
+      />
       <div className="mt-auto mb-3">
-        <AppDownloadComponent />
+        <AppDownloadComponent
+          links={links}
+        />
       </div>
       {
         isShowChatBox && (
