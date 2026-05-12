@@ -48,7 +48,7 @@ export default function MBItemsComponent({ links }) {
             </div>
           </div>
           <div className={`text-center text-white ${styles.itemText}`}>
-            Phim 18+
+            Mã dự thưởng
           </div>
         </Link>
         <Link to={getLinkByKey(links, LINK_KEYS.QUA_TANG, isMobile)} className={`d-block col-4 px-3`}>
