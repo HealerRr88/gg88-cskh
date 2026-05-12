@@ -1,4 +1,4 @@
-import { DEVICES, DEFAULT_LINKS } from "./configs";
+import { DEVICES, DEFAULT_LINKS } from "./config";
 
 export function getLinkByKey(links, key, isMobile) {
   if (!links || !key) return '#';

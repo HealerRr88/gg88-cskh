@@ -1,0 +1,9 @@
+.tabContainer {
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabContainer {
+    padding: 13px 8px 10px 8px;
+  }
+}

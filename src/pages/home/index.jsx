@@ -5,22 +5,29 @@ import { isMobile } from "react-device-detect";
 import LinkService from "../../services/link";
 import PageLoading from "../../components/loading/page";
 import GifService from "../../services/gif";
-import { DEVICES } from "../../utils/configs";
+import { DEVICES } from "../../utils/config";
 
 export default function HomePage() {
   const LINKS_KEY = 'links';
   const GIFS_KEY = 'gifs';
+
   const linkService = new LinkService();
   const gifService = new GifService();
 
   const linksData = useQuery(
     [LINKS_KEY],
     () => linkService.getAll(),
+    {
+      retry: false,
+    }
   );
 
   const gifsData = useQuery(
     [GIFS_KEY],
     () => gifService.getAll(),
+    {
+      retry: false,
+    }
   );
 
   if (linksData.isLoading) {

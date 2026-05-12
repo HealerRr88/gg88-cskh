@@ -1,0 +1,10 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  min-width: 1570px;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+}

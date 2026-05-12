@@ -1,61 +1,44 @@
-import che_do_vip_btn from '../../assets/images/che-do-vip-btn.webp'
-import tai_app_btn from '../../assets/images/tai-app-btn.webp'
-import khuyen_mai_btn from '../../assets/images/khuyen-mai-btn.webp'
-import { Link } from 'react-router-dom'
-import { Modal } from 'react-bootstrap'
-import { useState } from 'react';
-import './styles.css';
-import styles from './style.module.css';
-import { LINK_KEYS } from '../../utils/configs'
-import { isMobile } from 'react-device-detect';
-import { getLinkByKey } from '../../utils/functions';
+import qr_android_img from "../../assets/images/qr-android.png";
+import android_app_btn_img from "../../assets/images/android-app-btn.png";
+import google_play_img from "../../assets/images/google-play.png";
+import qr_ios_img from "../../assets/images/qr-ios.png";
+import ios_app_btn_img from "../../assets/images/ios-app-btn.png";
+import app_store_img from "../../assets/images/app-store.png";
+import styles from "./style.module.css";
+import { Link } from "react-router-dom";
+import { getLinkByKey } from "../../utils/functions";
+import { LINK_KEYS } from "../../utils/config";
+import { isMobile } from "react-device-detect";
 
 export default function AppDownloadComponent({ links }) {
-  const [isShowDownloadModal, setIsShowDownloadModal] = useState(false);
-  const [appDownloadPlatform, setAppDownloadPlatform] = useState('iOS');
-
-
   return (
-    <>
-      <div className="d-flex justify-content-between align-items-center gap-4 mt-md-3">
-        <Link target='__blank' to={getLinkByKey(links, LINK_KEYS.CHE_DO_VIP_BUTTON, isMobile)} className='flex-fill arise-animation'>
-          <img className='w-100' src={che_do_vip_btn} alt="che_do_vip_btn" />
-        </Link>
-        <div className='col-3 cursor-pointer arise-animation' onClick={() => setIsShowDownloadModal(true)}>
-          <img className='w-100' src={tai_app_btn} alt="tai_app_btn" />
+    <div className={`col-md-4 col-12 mx-auto d-flex mt-md-4 mt-3 ps-1 ${styles.appDownloadContainer}`}>
+      <div className="col-6 d-flex align-items-center pe-2">
+        <div className="col-5 pe-2">
+          <img className="w-100" src={qr_android_img} alt="qr_android_img" />
         </div>
-        <Link target='__blank' to={getLinkByKey(links, LINK_KEYS.KHUYEN_MAI_BUTTON, isMobile)} className='flex-fill arise-animation'>
-          <img className='w-100' src={khuyen_mai_btn} alt="khuyen_mai_btn" />
-        </Link>
+        <div className="col-7">
+          <Link to={getLinkByKey(links, LINK_KEYS.TAI_APP_ANDROID, isMobile)}>
+            <img className="w-100" src={android_app_btn_img} alt="android_app_btn_img" />
+          </Link>
+          <Link to={getLinkByKey(links, LINK_KEYS.TAI_APP_ANDROID, isMobile)}>
+            <img className="w-100" src={google_play_img} alt="google_play_img" />
+          </Link>
+        </div>
       </div>
-
-      <Modal
-        show={isShowDownloadModal}
-        onHide={() => setIsShowDownloadModal(false)}
-        centered
-      >
-        <Modal.Body>
-          <div className={`${styles.appDownloadPopup}`}>
-            <div className='fw-bold text-center' style={{ fontSize: 20 }}>TẢI ỨNG DỤNG</div>
-            <div className='text-center' style={{ fontSize: 14 }}>Nhấn nút bên dưới để cài đặt APP GG88 cho {appDownloadPlatform}</div>
-            <div className='d-flex justify-content-between align-items-center mt-3 rounded-pill' style={{ backgroundColor: '#E2E8F0', padding: 3, height: 45 }}>
-              <div className={`h-100 col-6 rounded-pill d-flex align-items-center justify-content-center fw-bold ${(appDownloadPlatform === 'iOS' ? 'bg-white' : '')}`}
-                onClick={() => setAppDownloadPlatform('iOS')}
-              >
-                iOS
-              </div>
-              <div className={`h-100 col-6 rounded-pill d-flex align-items-center justify-content-center fw-bold text-secondary cursor-pointer ${(appDownloadPlatform === 'Android' ? 'bg-white' : '')}`}
-                onClick={() => setAppDownloadPlatform('Android')}
-              >
-                Android
-              </div>
-            </div>
-            <Link target='__blank' to={appDownloadPlatform === 'iOS' ? getLinkByKey(links, LINK_KEYS.TAI_APP_IOS, isMobile) : getLinkByKey(links, LINK_KEYS.TAI_APP_ANDROID, isMobile)} className={`mt-5 rounded-pill cursor-pointer arise-animation d-flex align-items-center justify-content-center ${styles.downloadBtn}`}>
-              <span className='text-uppercase'>TẢI APP {appDownloadPlatform}</span>
-            </Link>
-          </div>
-        </Modal.Body>
-      </Modal>
-    </>
+      <div className="col-6 d-flex align-items-center ps-2">
+        <div className="col-5 pe-2">
+          <img className="w-100" src={qr_ios_img} alt="qr_ios_img" />
+        </div>
+        <div className="col-7">
+          <Link to={getLinkByKey(links, LINK_KEYS.TAI_APP_IOS, isMobile)}>
+            <img className="w-100" src={ios_app_btn_img} alt="ios_app_btn_img" />
+          </Link>
+          <Link to={getLinkByKey(links, LINK_KEYS.TAI_APP_IOS, isMobile)}>
+            <img className="w-100" src={app_store_img} alt="app_store_img" />
+          </Link>
+        </div>
+      </div>
+    </div>
   )
 }

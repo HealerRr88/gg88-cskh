@@ -1,4 +1,4 @@
-import loadingIcon from '../../../assets/images/logo.webp';
+import loadingIcon from '../../../assets/images/logo.png';
 
 export default function PageLoading() {
   return (
