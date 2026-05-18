@@ -9,7 +9,7 @@ import tab_2_img from "../../assets/images/tab-2.png";
 import tab_2_mb_img from "../../assets/images/tab-2-mb.png";
 import tab_2_img_active from "../../assets/images/tab-2-active.png";
 import tab_2_mb_img_active from "../../assets/images/tab-2-mb-active.png";
-import tab_3_img from "../../assets/images/tab-33.png";
+//import tab_3_img from "../../assets/images/tab-3.png";
 import tab_3_mb_img from "../../assets/images/tab-3-mb.png";
 import tab_3_img_active from "../../assets/images/tab-3-active.png";
 import tab_3_mb_img_active from "../../assets/images/tab-3-mb-active.png";
@@ -63,6 +63,8 @@ import { LINK_KEYS } from "../../utils/config";
 export default function MainTabsComponent({ links }) {
   const [activeTab, setActiveTab] = useState(0);
   const [loading, setLoading] = useState(false);
+
+  const tab_3_img = "https://pub-e70fb91940f34df0b34be84ddacb5e1f.r2.dev/images/tab-3.png";
 
   const handleClickTab = (tabIndex) => {
     if (activeTab === tabIndex) return;
