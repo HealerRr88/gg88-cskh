@@ -1,6 +1,7 @@
 import nhap_code_item_img from "../../../assets/images/nhap-code-item.png";
 import livestream_item_img from "../../../assets/images/livestream-item.png";
-import ma_du_thuong_item_img from "../../../assets/images/ma-du-thuong-item.png";
+//import ma_du_thuong_item_img from "../../../assets/images/ma-du-thuong-item.png";
+import phim_18_item_img from "../../../assets/images/phim-18-item.png";
 import qua_tang_item_img from "../../../assets/images/qua-tang-item.png";
 import video_item_img from "../../../assets/images/video-item.png";
 import thien_nguyen_item_img from "../../../assets/images/thien-nguyen-item.png";
@@ -44,11 +45,11 @@ export default function MBItemsComponent({ links }) {
           <div className={`position-relative`}>
             <img className="w-100" src={circle_lights_img} alt="circle_lights_img" />
             <div className="w-100 h-100 position-absolute start-0 top-0 d-flex justify-content-center align-items-center">
-              <img className="col-8" src={ma_du_thuong_item_img} alt="ma_du_thuong_item_img" />
+              <img className="col-8" src={phim_18_item_img} alt="phim_18_item_img" />
             </div>
           </div>
           <div className={`text-center text-white ${styles.itemText}`}>
-            Mã dự thưởng
+            Phim 18+
           </div>
         </Link>
         <Link to={getLinkByKey(links, LINK_KEYS.QUA_TANG, isMobile)} className={`d-block col-4 px-3`}>

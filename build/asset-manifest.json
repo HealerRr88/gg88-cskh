@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.8db0fe9a.css",
-    "main.js": "/static/js/main.286542b6.js",
-    "static/css/750.9f96c35f.chunk.css": "/static/css/750.9f96c35f.chunk.css",
-    "static/js/750.a7361f39.chunk.js": "/static/js/750.a7361f39.chunk.js",
+    "main.js": "/static/js/main.37d3ec73.js",
+    "static/css/655.fe7ddf44.chunk.css": "/static/css/655.fe7ddf44.chunk.css",
+    "static/js/655.904f111c.chunk.js": "/static/js/655.904f111c.chunk.js",
     "static/js/956.112217ce.chunk.js": "/static/js/956.112217ce.chunk.js",
     "static/js/798.0dc64a8c.chunk.js": "/static/js/798.0dc64a8c.chunk.js",
     "static/media/background.png": "/static/media/background.79bbc2190cb30949969a.png",
     "static/media/nhap-code-item.png": "/static/media/nhap-code-item.58eec37211b1d9ef17c3.png",
-    "static/media/ma-du-thuong-item.png": "/static/media/ma-du-thuong-item.e509aa5f91c5803b8486.png",
     "static/media/livestream-item.png": "/static/media/livestream-item.9f0551ff3b76ed7f3958.png",
     "static/media/qua-tang-item.png": "/static/media/qua-tang-item.f865220cfce6b9409748.png",
     "static/media/video-item.png": "/static/media/video-item.3a0790fd56f7a62dbeab.png",
+    "static/media/phim-18-item.png": "/static/media/phim-18-item.17492ef2bdce6d1984f2.png",
     "static/media/background-mb.png": "/static/media/background-mb.8ae830c7eb7cd18fa4fe.png",
     "static/media/tab-bg.png": "/static/media/tab-bg.523ea5aca32d5d06a01e.png",
     "static/media/thien-nguyen-item.png": "/static/media/thien-nguyen-item.d836afd4739377045cfb.png",
@@ -73,14 +73,14 @@
     "static/media/three-dots.svg": "/static/media/three-dots.9f216521ebbae8717b48ebf325a80cc6.svg",
     "index.html": "/index.html",
     "main.8db0fe9a.css.map": "/static/css/main.8db0fe9a.css.map",
-    "main.286542b6.js.map": "/static/js/main.286542b6.js.map",
-    "750.9f96c35f.chunk.css.map": "/static/css/750.9f96c35f.chunk.css.map",
-    "750.a7361f39.chunk.js.map": "/static/js/750.a7361f39.chunk.js.map",
+    "main.37d3ec73.js.map": "/static/js/main.37d3ec73.js.map",
+    "655.fe7ddf44.chunk.css.map": "/static/css/655.fe7ddf44.chunk.css.map",
+    "655.904f111c.chunk.js.map": "/static/js/655.904f111c.chunk.js.map",
     "956.112217ce.chunk.js.map": "/static/js/956.112217ce.chunk.js.map",
     "798.0dc64a8c.chunk.js.map": "/static/js/798.0dc64a8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8db0fe9a.css",
-    "static/js/main.286542b6.js"
+    "static/js/main.37d3ec73.js"
   ]
 }
