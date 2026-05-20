@@ -41,7 +41,7 @@ export default function MBItemsComponent({ links }) {
             Livestream
           </div>
         </Link>
-        <Link to={getLinkByKey(links, LINK_KEYS.MA_DU_THUONG, isMobile)} className={`d-block col-4 px-3`}>
+        <Link to={getLinkByKey(links, LINK_KEYS.PHIM_18, isMobile)} className={`d-block col-4 px-3`}>
           <div className={`position-relative`}>
             <img className="w-100" src={circle_lights_img} alt="circle_lights_img" />
             <div className="w-100 h-100 position-absolute start-0 top-0 d-flex justify-content-center align-items-center">
