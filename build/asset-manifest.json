@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.8db0fe9a.css",
-    "main.js": "/static/js/main.8614c853.js",
+    "main.js": "/static/js/main.34832f04.js",
     "static/css/894.a89c9459.chunk.css": "/static/css/894.a89c9459.chunk.css",
-    "static/js/894.7947dd92.chunk.js": "/static/js/894.7947dd92.chunk.js",
+    "static/js/894.34d6e7c7.chunk.js": "/static/js/894.34d6e7c7.chunk.js",
     "static/js/956.31b1eadb.chunk.js": "/static/js/956.31b1eadb.chunk.js",
     "static/js/798.0dc64a8c.chunk.js": "/static/js/798.0dc64a8c.chunk.js",
     "static/media/background.png": "/static/media/background.79bbc2190cb30949969a.png",
@@ -53,10 +53,10 @@
     "static/media/nen-tang-cong-dong-mb.png": "/static/media/nen-tang-cong-dong-mb.4eb0033c5ccac1baa9da.png",
     "static/media/nen-tang-cong-dong.png": "/static/media/nen-tang-cong-dong.9894d796e881a83a3819.png",
     "static/media/ho-tro-rut-tien-mb.png": "/static/media/ho-tro-rut-tien-mb.f9f4d22a413ae574b09e.png",
-    "static/media/hotline-mb.png": "/static/media/hotline-mb.68d0617b3963fb5ca084.png",
     "static/media/telegram-khieu-nai-mb.png": "/static/media/telegram-khieu-nai-mb.c7041800a70a4629eeea.png",
     "static/media/ho-tro-rut-tien.png": "/static/media/ho-tro-rut-tien.a27b7a4b39c8ad96e6e1.png",
-    "static/media/hotline.png": "/static/media/hotline.b58f7c6959282a71f1f3.png",
+    "static/media/hotline-mb.png": "/static/media/hotline-mb.c61057bbf1deda9f99ba.png",
+    "static/media/hotline.png": "/static/media/hotline.f51605f34303b4a586ef.png",
     "static/media/kenh-telegram-mb.png": "/static/media/kenh-telegram-mb.db9be5f55f6b6e149e7a.png",
     "static/media/kenh-telegram.png": "/static/media/kenh-telegram.3455c46d10165aa24bd0.png",
     "static/media/login-btn.png": "/static/media/login-btn.75ea9981e745742afc73.png",
@@ -72,14 +72,14 @@
     "static/media/three-dots.svg": "/static/media/three-dots.9f216521ebbae8717b48ebf325a80cc6.svg",
     "index.html": "/index.html",
     "main.8db0fe9a.css.map": "/static/css/main.8db0fe9a.css.map",
-    "main.8614c853.js.map": "/static/js/main.8614c853.js.map",
+    "main.34832f04.js.map": "/static/js/main.34832f04.js.map",
     "894.a89c9459.chunk.css.map": "/static/css/894.a89c9459.chunk.css.map",
-    "894.7947dd92.chunk.js.map": "/static/js/894.7947dd92.chunk.js.map",
+    "894.34d6e7c7.chunk.js.map": "/static/js/894.34d6e7c7.chunk.js.map",
     "956.31b1eadb.chunk.js.map": "/static/js/956.31b1eadb.chunk.js.map",
     "798.0dc64a8c.chunk.js.map": "/static/js/798.0dc64a8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8db0fe9a.css",
-    "static/js/main.8614c853.js"
+    "static/js/main.34832f04.js"
   ]
 }
